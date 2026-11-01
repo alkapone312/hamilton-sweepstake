@@ -1,0 +1,87 @@
+<section class="workspace-head">
+    <div>
+        <p class="eyebrow">$t('room.kicker')</p>
+        <h1 id="room-title"></h1>
+        <p class="muted room-subtitle">$t('room.subtitle')</p>
+        <span id="room-status" class="status">$t('room.waiting')</span>
+    </div>
+    <div class="room-count-tile">
+        <span class="eyebrow">$t('room.participants')</span>
+        <strong id="room-count">0</strong>
+        <small>$t('room.registered')</small>
+    </div>
+</section>
+<div class="editor-grid room-grid">
+    <div class="room-main">
+        <section class="panel">
+            <div class="section-heading compact">
+                <h2>$t('room.listTitle')</h2>
+                <span class="overline"><span class="live-dot"></span>$t('room.live')</span>
+            </div>
+            <p class="muted room-copy">$t('room.listHint')</p>
+            <div id="people-list" class="people-list" aria-live="polite"></div>
+        </section>
+        <section id="join-panel" class="panel">
+            <p class="eyebrow">$t('join.kicker')</p>
+            <h2 class="editor-title">$t('join.title')</h2>
+            <p class="muted room-copy">$t('join.description')</p>
+            <form id="join-form" class="fields">
+                <div class="field">
+                    <label for="join-username">$t('join.username')</label>
+                    <input id="join-username" name="username" maxlength="40"
+                        autocomplete="nickname" required placeholder="$t('join.placeholder')">
+                </div>
+                <div>
+                    <button type="submit" class="btn dark">$t('join.submit')</button>
+                </div>
+            </form>
+        </section>
+        <section id="member-panel" class="panel" hidden>
+            <p class="eyebrow">$t('result.kicker')</p>
+            <h2 class="editor-title">$t('result.title') <span id="member-username"></span></h2>
+            <div id="result-pending" class="details">
+                <strong>$t('result.pendingTitle')</strong>
+                <p class="side-note">$t('result.pendingDesc')</p>
+            </div>
+            <div id="result-ready" class="result-card" hidden>
+                <span class="eyebrow">$t('result.yourNext')</span>
+                <strong id="assigned-name"></strong>
+                <p>$t('result.private')</p>
+            </div>
+        </section>
+        <section id="closed-panel" class="panel" hidden>
+            <p class="eyebrow">$t('join.closedLabel')</p>
+            <h2 class="editor-title">$t('join.closedTitle')</h2>
+            <p class="muted">$t('join.closedDesc')</p>
+        </section>
+    </div>
+    <aside class="room-side">
+        <section class="panel">
+            <p class="eyebrow">$t('share.kicker')</p>
+            <h2 class="editor-title">$t('share.title')</h2>
+            <p class="side-note">$t('share.description')</p>
+            <div class="field">
+                <label for="room-share-url">$t('share.label')</label>
+                <input id="room-share-url" readonly aria-label="$t('share.label')">
+            </div>
+            <button id="copy-url" class="btn white full-width" type="button">
+                $t('share.copy')
+            </button>
+        </section>
+        <section id="owner-panel" class="panel owner-panel" hidden>
+            <p class="eyebrow">$t('owner.kicker')</p>
+            <h2 class="editor-title">$t('owner.title')</h2>
+            <div class="room-lifetime">
+                <p class="eyebrow">$t('owner.lifetimeLabel')</p>
+                <strong id="room-countdown" class="room-countdown"
+                    role="timer" aria-live="off">01:00:00</strong>
+                <p class="small-note">$t('owner.lifetimeHint')</p>
+            </div>
+            <p id="draw-hint" class="side-note"></p>
+            <button id="draw-button" class="btn dark full-width" type="button">
+                $t('owner.draw') <span aria-hidden="true">↗</span>
+            </button>
+            <p class="small-note">$t('owner.warning')</p>
+        </section>
+    </aside>
+</div>

@@ -1,0 +1,128 @@
+{
+    "app": {
+        "language": "Język",
+        "ready": "GOTOWE DO LOSOWANIA",
+        "loading": "Ładowanie pokoju…",
+        "unavailable": "Nie udało się otworzyć aplikacji",
+        "backHome": "Wróć na stronę główną",
+        "theme": {
+            "light": "JASNY",
+            "dark": "CIEMNY",
+            "switchToDark": "Włącz ciemny motyw",
+            "switchToLight": "Włącz jasny motyw"
+        }
+    },
+    "common": {
+        "close": "Zamknij",
+        "copied": "Link skopiowany!",
+        "confirmDraw": "Rozpocząć losowanie? Nie można go powtórzyć ani dopisać nowych osób.",
+        "noPeople": "Jeszcze nikogo tu nie ma.",
+        "firstPerson": "Wyślij link i zaproś pierwszą osobę.",
+        "you": "TY"
+    },
+    "home": {
+        "title1": "Prosto.",
+        "title2": "Losowo.",
+        "title3": "Prywatnie.",
+        "description": "Zbierz wszystkich w jednym pokoju i rozpocznij losowanie. Każda osoba otrzyma jedną unikalną osobę, której nie wylosuje nikt inny.",
+        "create": "Utwórz pokój",
+        "hint": "Bez kont i instalacji.",
+        "stepsTitle": "Jak to działa?",
+        "stepsTag": "TRZY PROSTE KROKI",
+        "step1": "Stwórz pokój",
+        "step1Desc": "Nadaj nazwę pokojowi i udostępnij link wszystkim uczestnikom.",
+        "step2": "Zbierz listę",
+        "step2Desc": "Każdy wpisuje unikalną nazwę użytkownika. Lista odświeża się automatycznie.",
+        "step3": "Każda osoba losuje inną, unikalną osobę",
+        "step3Desc": "Każda osoba losuje inną osobę. Nikt nie losuje siebie i nikt nie zostaje wylosowany dwukrotnie.",
+        "yourRooms": "Twoje pokoje",
+        "savedHere": "Zapisane w tej przeglądarce",
+        "yourRoom": "TWÓJ POKÓJ",
+        "open": "Otwórz pokój",
+        "code": "KOD POKOJU: {id}"
+    },
+    "create": {
+        "kicker": "NOWY POKÓJ",
+        "title": "Jak nazwiemy ten pokój?",
+        "description": "Nazwa będzie widoczna dla każdego, kto otrzyma link.",
+        "name": "Nazwa pokoju",
+        "placeholder": "np. Losowanie zespołu",
+        "submit": "Utwórz pokój"
+    },
+    "room": {
+        "kicker": "PRZESTRZEŃ LOSOWANIA",
+        "subtitle": "Każdy uczestnik widzi tę samą listę. Wyniki są dostępne tylko dla wylosowanych osób.",
+        "waiting": "TRWAJĄ ZAPISY",
+        "drawn": "LOSOWANIE ZAKOŃCZONE",
+        "participants": "UCZESTNICY",
+        "registered": "zapisanych osób",
+        "listTitle": "Lista uczestników",
+        "live": "NA ŻYWO",
+        "listHint": "Lista aktualizuje się automatycznie co 3 sekundy."
+    },
+    "join": {
+        "kicker": "DOŁĄCZ DO CYKLU",
+        "title": "Wpisz się na listę",
+        "description": "Wybierz unikalną nazwę. Po zapisie ta przeglądarka zapamięta Twój prywatny dostęp do wyniku.",
+        "username": "Nazwa użytkownika",
+        "placeholder": "Twoja nazwa",
+        "submit": "Dołącz do pokoju",
+        "closedLabel": "ZAPISY ZAMKNIĘTE",
+        "closedTitle": "Losowanie już się odbyło",
+        "closedDesc": "Do tego pokoju nie można już dołączać. Wyniki widzą tylko zarejestrowane wcześniej osoby.",
+        "welcome": "Dodano Cię do listy!"
+    },
+    "result": {
+        "kicker": "TWOJA STREFA",
+        "title": "Witaj,",
+        "pendingTitle": "Czekamy na losowanie",
+        "pendingDesc": "Twój udział jest zapisany. Gdy twórca uruchomi losowanie, tutaj pojawi się Twój wynik.",
+        "yourNext": "Wylosowałeś:",
+        "private": "To informacja wyłącznie dla Ciebie. Inni uczestnicy widzą tylko swoje wyniki."
+    },
+    "share": {
+        "kicker": "ZAPROŚ ZNAJOMYCH",
+        "title": "Udostępnij pokój",
+        "description": "Wyślij ten link osobom, które chcesz dodać do losowania.",
+        "label": "Link do pokoju",
+        "copy": "Kopiuj link"
+    },
+    "owner": {
+        "kicker": "PANEL TWÓRCY",
+        "title": "Sterowanie losowaniem",
+        "lifetimeLabel": "POKÓJ WYGAŚNIE ZA",
+        "lifetimeHint": "Każda nowa osoba odnawia 60 minut. Samo przeglądanie pokoju nie przedłuża tego czasu.",
+        "draw": "Losowanie",
+        "warning": "Losowanie można uruchomić tylko raz. Po nim lista zostaje zamknięta.",
+        "notEnough": "Do rozpoczęcia potrzeba co najmniej dwóch osób.",
+        "ready": "Wszyscy już są? Możesz rozpocząć losowanie dla {count} osób.",
+        "finished": "Losowanie zakończone. Wyniki pozostają prywatne."
+    },
+    "errors": {
+        "client": {
+            "templateLoad": "Nie można wczytać widoków aplikacji.",
+            "templateMissing": "Brakuje widoku aplikacji.",
+            "invalidResponse": "Serwer zwrócił nieprawidłową odpowiedź.",
+            "http": "Nie udało się połączyć z serwerem.",
+            "storageUnavailable": "Przeglądarka blokuje zapisywanie prywatnego dostępu. Włącz pamięć lokalną.",
+            "copyFailed": "Nie udało się skopiować linku. Zaznacz i skopiuj go ręcznie."
+        },
+        "api": {
+            "internal": "Błąd serwera. Sprawdź konfigurację PHP i bazy danych.",
+            "roomNotFound": "Nie znaleziono tego pokoju.",
+            "ownerRequired": "Tylko twórca pokoju może uruchomić losowanie.",
+            "invalidRoomName": "Podaj nazwę pokoju (maksymalnie 100 znaków).",
+            "invalidUsername": "Podaj poprawną nazwę użytkownika (maksymalnie 40 znaków).",
+            "usernameTaken": "Ta nazwa jest już zajęta w tym pokoju.",
+            "roomFull": "W pokoju jest już maksymalna liczba uczestników.",
+            "registrationClosed": "Zapisy do tego pokoju są zamknięte.",
+            "participantRequired": "Brak dostępu do prywatnego wyniku na tym urządzeniu.",
+            "alreadyDrawn": "Losowanie już się odbyło.",
+            "notEnoughPeople": "Do losowania potrzebne są co najmniej dwie osoby.",
+            "unknownAction": "Nieznana akcja API.",
+            "postRequired": "Do API wymagane jest żądanie POST.",
+            "payloadTooLarge": "Zbyt duże żądanie.",
+            "requestObject": "Niepoprawny format żądania."
+        }
+    }
+}

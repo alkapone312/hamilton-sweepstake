@@ -1,0 +1,54 @@
+<section class="hero">
+    <div>
+        <h1>$t('home.title1')<br><em>$t('home.title2')</em><br>$t('home.title3')</h1>
+        <p>$t('home.description')</p>
+        <div class="actions">
+            <button class="btn dark" type="button" data-action="create-room">
+                $t('home.create') <span aria-hidden="true">↗</span>
+            </button>
+            <span class="muted">$t('home.hint')</span>
+        </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="circle-graph">
+            <span class="node node-one">A</span>
+            <span class="node node-two">B</span>
+            <span class="node node-three">C</span>
+            <span class="node node-four">D</span>
+            <svg viewBox="0 0 300 300" class="graph-lines">
+                <defs>
+                    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+                        <path d="M0 0 L7 3.5 L0 7 Z" fill="#d4f567"></path>
+                    </marker>
+                </defs>
+                <path d="M150 45 L255 150 L150 255 L45 150 Z" fill="none"
+                    stroke="#d4f567" stroke-width="3" stroke-dasharray="5 7"
+                    marker-mid="url(#arrow)"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+<div class="section-heading">
+    <h2>$t('home.stepsTitle')</h2>
+    <span class="eyebrow">$t('home.stepsTag')</span>
+</div>
+<section class="features">
+    <article class="feature">
+        <span class="symbol">01 ↗</span>
+        <strong>$t('home.step1')</strong>
+        <p>$t('home.step1Desc')</p>
+    </article>
+    <article class="feature">
+        <span class="symbol">02 ◎</span>
+        <strong>$t('home.step2')</strong>
+        <p>$t('home.step2Desc')</p>
+    </article>
+    <article class="feature">
+        <span class="symbol">03 ✓</span>
+        <strong>$t('home.step3')</strong>
+        <p>$t('home.step3Desc')</p>
+    </article>
+</section>
+{{savedRooms}}

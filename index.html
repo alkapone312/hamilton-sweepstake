@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ed">
+    <meta name="description" content="Hamilton Sweepstake — proste, losowe i prywatne losowanie osób.">
+    <title>Hamilton Sweepstake — Losowanie bez powtórzeń.</title>
+    <script>
+        // Set the theme before CSS loads to avoid flickering.
+        try {
+            document.documentElement.classList.toggle(
+                "dark",
+                localStorage.getItem("theme") === "dark"
+            );
+        } catch {
+            // Browsing without persistent storage is still supported visually.
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <header class="top">
+        <a class="brand" href="./" aria-label="Hamilton Sweepstake — strona główna">
+            <span class="brand-icon">✳</span>hamilton <span class="brand-second">sweepstake</span><span class="brand-dot">.</span>
+        </a>
+        <div class="header-right">
+            <button class="toggle-mode" id="theme-toggle" type="button"
+                aria-pressed="false" aria-label="Switch to dark mode">
+                <span class="toggle-icon" aria-hidden="true"></span>
+                <span class="toggle-label">LIGHT</span>
+            </button>
+            <label class="language-control">
+                <span data-i18n="app.language">Język</span>
+                <select id="language-select" aria-label="Język interfejsu">
+                    <option value="pl_PL">Polski</option>
+                    <option value="en_GB">English (UK)</option>
+                </select>
+            </label>
+            <span class="top-pill"><span class="live-dot"></span><span data-i18n="app.ready">GOTOWE DO LOSOWANIA</span></span>
+        </div>
+    </header>
+
+    <main id="app">
+        <section class="loading" data-i18n="app.loading">Ładowanie pokoju…</section>
+    </main>
+
+    <footer>HAMILTON SWEEPSTAKE © 2026</footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

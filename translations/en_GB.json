@@ -1,0 +1,128 @@
+{
+    "app": {
+        "language": "Language",
+        "ready": "READY TO DRAW",
+        "loading": "Opening room…",
+        "unavailable": "Unable to open the app",
+        "backHome": "Return home",
+        "theme": {
+            "light": "LIGHT",
+            "dark": "DARK",
+            "switchToDark": "Switch to dark mode",
+            "switchToLight": "Switch to light mode"
+        }
+    },
+    "common": {
+        "close": "Close",
+        "copied": "Link copied!",
+        "confirmDraw": "Start the draw? It cannot be repeated and no one else will be able to join.",
+        "noPeople": "Nobody has joined yet.",
+        "firstPerson": "Share the link to invite the first person.",
+        "you": "YOU"
+    },
+    "home": {
+        "title1": "Simple.",
+        "title2": "Random.",
+        "title3": "Private.",
+        "description": "Gather everyone in one room and start the draw. Each participant is assigned someone unique, drawn by nobody else.",
+        "create": "Create a room",
+        "hint": "No accounts or installs.",
+        "stepsTitle": "How does it work?",
+        "stepsTag": "THREE SIMPLE STEPS",
+        "step1": "Create a room",
+        "step1Desc": "Name the room and share a link with everyone involved.",
+        "step2": "Gather everyone",
+        "step2Desc": "Each participant chooses a unique username. The list updates automatically.",
+        "step3": "Everyone draws a different, unique person",
+        "step3Desc": "Each person draws someone else. Nobody draws themselves and nobody is drawn twice.",
+        "yourRooms": "Your rooms",
+        "savedHere": "Saved in this browser",
+        "yourRoom": "YOUR ROOM",
+        "open": "Open room",
+        "code": "ROOM CODE: {id}"
+    },
+    "create": {
+        "kicker": "NEW ROOM",
+        "title": "What should we call this room?",
+        "description": "Anyone with the link will see the room's name.",
+        "name": "Room name",
+        "placeholder": "e.g. Team draw",
+        "submit": "Create room"
+    },
+    "room": {
+        "kicker": "DRAW ROOM",
+        "subtitle": "Everyone sees the same list. Each result is visible only to its participant.",
+        "waiting": "REGISTRATION OPEN",
+        "drawn": "DRAW COMPLETE",
+        "participants": "PARTICIPANTS",
+        "registered": "registered people",
+        "listTitle": "Participant list",
+        "live": "LIVE",
+        "listHint": "The list updates automatically every 3 seconds."
+    },
+    "join": {
+        "kicker": "JOIN THE CYCLE",
+        "title": "Add your name",
+        "description": "Choose a unique username. This browser will remember your private access to the result.",
+        "username": "Username",
+        "placeholder": "Your username",
+        "submit": "Join room",
+        "closedLabel": "REGISTRATION CLOSED",
+        "closedTitle": "The draw has already happened",
+        "closedDesc": "You cannot join this room any more. Only previously registered users can see results.",
+        "welcome": "You have joined the list!"
+    },
+    "result": {
+        "kicker": "YOUR SPACE",
+        "title": "Welcome,",
+        "pendingTitle": "Waiting for the draw",
+        "pendingDesc": "Your registration is saved. Your private result will appear here once the owner draws.",
+        "yourNext": "You drew:",
+        "private": "Only you can see this information. Other participants see only their own result."
+    },
+    "share": {
+        "kicker": "INVITE EVERYONE",
+        "title": "Share the room",
+        "description": "Send this link to anyone you want to include.",
+        "label": "Room link",
+        "copy": "Copy link"
+    },
+    "owner": {
+        "kicker": "OWNER PANEL",
+        "title": "Drawing controls",
+        "lifetimeLabel": "ROOM EXPIRES IN",
+        "lifetimeHint": "Every new participant resets the 60-minute countdown. Viewing the room does not extend it.",
+        "draw": "Draw",
+        "warning": "The draw can happen only once. Registration will then close.",
+        "notEnough": "At least two participants are needed.",
+        "ready": "Everyone joined? You can start the draw for {count} people.",
+        "finished": "The draw is complete. Results remain private."
+    },
+    "errors": {
+        "client": {
+            "templateLoad": "Could not load application views.",
+            "templateMissing": "An application view is missing.",
+            "invalidResponse": "The server returned an invalid response.",
+            "http": "Could not connect to the server.",
+            "storageUnavailable": "Local storage is blocked. Enable it to save your private access.",
+            "copyFailed": "Could not copy the link. Select and copy it manually."
+        },
+        "api": {
+            "internal": "Server error. Check the PHP and database configuration.",
+            "roomNotFound": "Room not found.",
+            "ownerRequired": "Only the room owner can start the draw.",
+            "invalidRoomName": "Enter a room name (up to 100 characters).",
+            "invalidUsername": "Enter a valid username (up to 40 characters).",
+            "usernameTaken": "That username is already taken in this room.",
+            "roomFull": "This room has reached its participant limit.",
+            "registrationClosed": "Registration for this room is closed.",
+            "participantRequired": "This device does not have access to your private result.",
+            "alreadyDrawn": "The room has already been drawn.",
+            "notEnoughPeople": "At least two participants are required.",
+            "unknownAction": "Unknown API action.",
+            "postRequired": "The API requires POST requests.",
+            "payloadTooLarge": "Request too large.",
+            "requestObject": "Invalid request format."
+        }
+    }
+}

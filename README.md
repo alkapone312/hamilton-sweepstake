@@ -1,6 +1,6 @@
 # Hamilton Sweepstake — prywatne losowanie cyklu
 
-> **Projekt przygotowany z pomocą AI.** Przed publicznym wdrożeniem zalecany jest niezależny przegląd bezpieczeństwa i testy środowiskowe.
+> **Projekt przygotowany z pomocą AI.**
 
 Hamilton Sweepstake to samodzielna aplikacja HTML + CSS + JavaScript + PHP. Aplikacja działa bez frameworka, Composera, zewnętrznych bibliotek czy procesu budowania frontendu.
 
